@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Weather App</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="card">
+            <h1>Weather App</h1>
+            <div class="search-bar">
+                <input type="search" placeholder="Enter city name" id="location">
+                <button id="get-weather"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+            <div class="results">
+                <img id="weather-icon" />
+                <h1 id="temp"></h1>
+                <h2 id="city"></h2>
+                
+            </div>
+            <div class="metrics">
+                <div class="col " >
+                    <p >HUMIDITY</p>
+                    <p id="humidity"></p>
+                </div>
+                <div class="col ">
+                    <p >WIND SPEED</p>
+                    <p id="windSpeed"></p>
+                </div>
+                <div class="col ">
+                    <p >PRESSURE</p>
+                    <p id="pressure"></p>
+                </div>
+                <div class="col ">
+                    <p >SEA LEVEL</p>
+                    <p id="sealevel"></p>
+                </div>
+                   
+                </div>
+        </div>
+
+        <script src="weather.js"></script>
+    </body>
+</html>
